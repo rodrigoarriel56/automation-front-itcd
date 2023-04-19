@@ -1,25 +1,26 @@
 # cypress-cucumber-structure
 
 1 - Configuração do Ambiente Cypress:
-
+```
 Instalar Node.js
-
+```
+```
 Escolher uma IDE de JavaScript para programar
-
-1- Passo de um clone no projeto
+```
+2- Passo de um clone no projeto
 ```
 git clone https://github.com/rodrigoarriel56/automacao-cypress-cucumber.git
 ```
-2- Passo de entrar na pasta do projeto
+3- Passo de entrar na pasta do projeto
 ```
 cd automacao-cypress-cucumber.git
 ``` 
-3- Instalar o Cypress com Cucumber executando o seguinte comando na raíz da pasta do seu projeto
+4- Instalar o Cypress com Cucumber executando o seguinte comando na raíz da pasta do seu projeto
 ```
 npm install
 ```
-4 - Passo de execução dos testes
-4.1 - Para iniciar os testes, execute um dos seguintes comandos no terminal do VS Code:
+5 - Passo de execução dos testes
+5.1 - Para iniciar os testes, execute um dos seguintes comandos no terminal do VS Code:
 
 ```
 Para executar os testes via terminal: npx cypress run
