@@ -1,4 +1,22 @@
 # cypress-cucumber-structure
+
+1- Passo de um clone no projeto
+
+```
+git clone git@github.com:rodrigoarriel56/automacao-test-api-httparty-cucumber.git
+```
+
+2- Passo de entrar na pasta do projeto
+
+3- Passo de instalação das dependências do projeto
+
+```
+bundle install
+```
+```
+cd test_api_httparty_cucumber/tests
+```
+
 <h2>Estrutra de projeto utilizando Cypress com Cucumber</h2>
 
 <b>Para configurar o Ambiente:</b>
