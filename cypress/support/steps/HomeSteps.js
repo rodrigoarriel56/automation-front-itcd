@@ -13,3 +13,15 @@ Given("acessar site VR", () => {
 Then("devo visualizar as informacoes do site", () => {
     homePage.visualizarMensagem();
 })
+
+And("clico no botao pra voce", () => {
+    homePage.clicarBotaoPraVoce();
+})
+
+And("clico no botao unde usar meu vr", () => {
+    homePage.clicarBotaoOndeUsar();
+})
+
+Then("devera ser apresentado tela do google com mapa", () => {
+    homePage.campoVisivel();
+})

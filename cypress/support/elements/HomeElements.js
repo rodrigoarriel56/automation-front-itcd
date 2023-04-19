@@ -1,14 +1,16 @@
 class HomeElements {
     
-	//botaoLogin = () => { return '.main-header-login-content .title' }
+	mensagemSucesso = () => { return '#buttonCompreOnline' }
+
+    btnPravoce = () => { return "class=vr-main-navigation__link vr-main-navigation__link--anchor" }
+
+    OndeUsarMeuVR = () => { return "class=vr-main-navigation__sublink " }
 
     //botaoRecuperarSenha = () => { return '.forgot' }
 
-    //botaoRealizarLogin = () => { return '[type="submit"]' }
+    enderecoSucesso = () => { return '#endereco' }
 
-    mensagemSucesso = () => { return '#buttonCompreOnline' }
-
-    //inputSenha = () => { return '#password' }
+    endereco = () => { return "#endereco"}    
 
     mensagemErro = () => { return '.description' }
 }
