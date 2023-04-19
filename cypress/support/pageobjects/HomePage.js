@@ -41,9 +41,11 @@ class HomePage {
     campoVisivel() {        
         cy.get(homeElements.endereco()).should('contain', 'Digite o nome ou endereço de um lugar')
     }
+
+    campoEnderecoVisivel() {        
+        cy.get('#endereco')
+    }
     
 }
-    
-//}
 
 export default HomePage;

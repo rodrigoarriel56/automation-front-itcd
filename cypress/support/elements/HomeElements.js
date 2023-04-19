@@ -6,8 +6,6 @@ class HomeElements {
 
     OndeUsarMeuVR = () => { return "class=vr-main-navigation__sublink " }
 
-    //botaoRecuperarSenha = () => { return '.forgot' }
-
     enderecoSucesso = () => { return '#endereco' }
 
     endereco = () => { return "#endereco"}    
