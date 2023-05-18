@@ -32,3 +32,5 @@ Para executar os testes via browser: npx cypress run --browser chrome --no-exit
 Para executar os testes via script salvo em package.json: npm run test:chrome    
 
 ```
+
+6 - Passo criado para testes de acionamento das Actions
