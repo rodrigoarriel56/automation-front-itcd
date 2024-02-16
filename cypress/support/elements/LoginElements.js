@@ -1,10 +1,13 @@
 class LoginElements {
 
-    mensagemErro = () => { return '.description' }
+    inputUsername = () => cy.get('#username')
 
-    mensagemSucesso = () => { return '#buttonCompreOnline' }
+    inputPassword = () => cy.get('#password')
 
-    inputEndereco = () => { return '#endereco' }
+    btnLogin = () => cy.get('#kc-login')
+
+    mensagemSucesso = () => cy.xpath('//*/text()[normalize-space(.)=Bem vindo,]/parent::*')
+
 }
 
 export default LoginElements;

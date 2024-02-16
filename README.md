@@ -9,7 +9,7 @@ Escolher uma IDE de JavaScript para programar
 ```
 2- Passo de um clone no projeto
 ```
-git clone https://github.com/rodrigoarriel56/automacao-cypress-cucumber.git
+git clone https://github.com/rodrigoarriel56/automation-front-itcd.git
 ```
 3- Passo de entrar na pasta do projeto
 ```
