@@ -2,8 +2,10 @@
 
 import HomePage from '../pageobjects/HomePage'
 import LoginPage from '../pageobjects/LoginPage'
+import OndeUsarPage from '../pageobjects/OndeUsarPage'
 const loginPage = new LoginPage
 const homePage = new HomePage
+const ondeUsarPage = new OndeUsarPage
 
 
 Given("acessar site VR", () => {
@@ -18,8 +20,20 @@ And("clico no botao pra voce", () => {
     homePage.clicarBotaoPraVoce();
 })
 
-And("clico no botao unde usar meu vr", () => {
-    homePage.clicarBotaoOndeUsar();
+When("preencho campo endereco", () => {
+    ondeUsarPage.preencherEndereco();
+})
+
+When("seleciono cartao na lista", () => {
+    ondeUsarPage.selecioneCartao();
+})
+
+And("clico no botao confirmar", () => {
+    ondeUsarPage.btnConfirmar();
+})
+
+And("clico no botao buscar", () => {
+    ondeUsarPage.btnBuscar();
 })
 
 Then("devera ser apresentado tela do google com mapa", () => {
