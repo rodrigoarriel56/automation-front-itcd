@@ -1,16 +1,11 @@
 class HomeElements {
     
-	mensagemSucesso = () => { return '#buttonCompreOnline' }
+    btnManutencaoParametros = () => cy.xpath("//mat-expansion-panel-header[@id='mat-expansion-panel-header-0']/span/mat-panel-title")
 
-    btnPravoce = () => { return "class=vr-main-navigation__link vr-main-navigation__link--anchor" }
+    btnBensImoveis = () => cy.xpath("//*/text()[normalize-space(.)='Bens Imóveis']/parent::*")
 
-    OndeUsarMeuVR = () => { return "class=vr-main-navigation__sublink " }
+    btnBensMoveis = () => cy.xpath("//*/text()[normalize-space(.)='Bens Móveis']/parent::*")    
 
-    enderecoSucesso = () => { return '#endereco' }
-
-    endereco = () => { return "#endereco"}    
-
-    mensagemErro = () => { return '.description' }
 }
 
 export default HomeElements;
