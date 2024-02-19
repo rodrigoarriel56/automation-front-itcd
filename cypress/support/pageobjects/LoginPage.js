@@ -10,35 +10,28 @@ class LoginPage {
         cy.visit(url)
     }
 
-    // Clica no botão que acessa a página de login do site
-    clicarBotaoPaginaLogin() {
-        cy.get(loginElements.botaoLogin()).click()
+    // Preencher campo de usuário
+    preencherUsername() {
+        cy.get(loginElements.inputUsername()).type('12345678901')
+        cy.pause()
     }
 
-    // Clica no botão de realizar login
-    clicarBotaoRealizarLogin() {
-        cy.get(loginElements.botaoRealizarLogin()).click()
+    // Preencher campo de senha
+    preencherPassword() {
+        cy.get(loginElements.inputPassword()).type('12345678')
+        cy.pause()
     }
 
-    // Informa email no input do email
-    informarEmail(email) {
-        cy.get(loginElements.inputEmail()).type(email)
+    // Clicar em botão login
+    btnLogin() {
+        cy.get(loginElements.btnLogin()).click()
     }
 
-    // Informa senha no input da senha
-    informarSenha(senha) {
-        cy.get(loginElements.inputSenha()).type(senha)
+    // Mensagem de boas vindas
+    mensagemBoasVindas() {
+        cy.get(loginElements.mensagemSucesso()).should('contain', 'Bem vindo')
     }
 
-    // Verifica se o botão tem o texto "Esqueceu sua senha?"
-    visualizarBotaoRecuperarSenha() {
-        cy.get(loginElements.botaoRecuperarSenha()).should('contain', 'Esqueceu sua senha?')
-    }
-
-    // Visualizar mensagem de erro "Usuário ou senha inválidos."
-    visualizarErroLogin() {
-        cy.get(loginElements.mensagemErro()).should('contain', 'Usuário ou senha inválidos.')
-    }
     
 }
 

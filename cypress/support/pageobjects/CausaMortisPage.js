@@ -3,17 +3,18 @@
 import LoginElements from '../elements/LoginElements'
 const loginElements = new LoginElements
 
-import OndeUsarElements from '../elements/OndeUsarElements'
-const ondeUsarElements = new OndeUsarElements
+import CausaMortisElements from '../elements/CausaMortisElements'
+const causaMortisElements = new CausaMortisElements
 
 class OndeUsarElements {
 
-    // Clica no botão onde Usar Elements
-    OndeUsarMeuVR() {
-        cy.get(ondeUsarElements.OndeUsarMeuVR()).click()
+    CausaMortis() {
+        cy.get(causaMortisElements.btnCausaMortis()).click()
+        cy.get(causaMortisElements.btnCalculoImposto()).click()
     }
 
-    // Clica no botão preencher Endereco
+    // Ainda não tem a tela de calculo do imposto.
+    
     preencherEndereco() {
         cy.get(ondeUsarElements.preencherEndereco()).click()
     }
